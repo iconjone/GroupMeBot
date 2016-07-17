@@ -1,8 +1,8 @@
-# Sample GroupMe NodeJS Callback Bot
+# GroupMeBot - Apiai Integration, Custom Commands Integration and Giphy Integration
 
 ## Introduction
+How do I even get this started?
 
-This project shows the capability of a bot to react to messages sent within a group.
 
 ## Contents
 
@@ -14,17 +14,23 @@ This project shows the capability of a bot to react to messages sent within a gr
     * Pull the code down to your local machine
     * Configure the local environment variables to your bot's credentials
 
+    (Note these instructions were made by GroupMe, but I added a few twists)
+
 ## Requirements:
 
   * GroupMe account
   * Heroku account
   * [Heroku Toolbelt](https://toolbelt.heroku.com/)
 
+  If You don't want to install the ToolBelt Make sure you have Git shell, and install everything but the Heroku Giu and Bash
+  This will work, but I honestly reccomend, Installing it completely
+
 # Get your bot up and running<a name="deploy"></a>
 
 ## Deploy to Heroku:
 
 Be sure to log into heroku, using your heroku credentials, then click the link below.
+(This means go to Heroku, and make sure you're signed in)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
@@ -58,6 +64,7 @@ Fill out the form to create your new bot:
   * Paste in the url to your newly deply heroku app
     * `http://your-app-name-here.herokuapp.com/`
   * (Optional) Give your bot an avatar by providing a url to an image
+  (You can just submit the image to a chat, and use that link (it will be a .large file))
   * Click submit
 
 ## Find your Bot ID:<a name="get-bot-id"></a>
@@ -146,4 +153,3 @@ Then navigate to `http://127.0.0.1:5000/` in a browser.
 ![Local bot](http://i.groupme.com/502x133.png.f06c630467954f5dab4c742dc67b71bf)
 
 ## All done! Go play around and make the bot your own.
-
