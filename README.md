@@ -22,7 +22,7 @@ How do I even get this started?
   * Heroku account
   * [Heroku Toolbelt](https://toolbelt.heroku.com/)
 
-  If You don't want to install the ToolBelt Make sure you have Git shell, and install everything but the Heroku Giu and Bash
+  If You don't want to install the ToolBelt Make sure you have Git shell, and install everything but the Heroku Gui and Bash
   This will work, but I honestly reccomend, Installing it completely
 
 # Get your bot up and running<a name="deploy"></a>
