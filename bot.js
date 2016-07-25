@@ -82,7 +82,8 @@ if(aires)
     query = query.replace(/\s/g, "+");
     //Makes the query seperated by plus
     if(request.name != botName) {
-    if(aiClient != "NA"){
+    if(aiClient != "undefined"){
+      console.log("dw")
     apiai(query);
       }
     }
