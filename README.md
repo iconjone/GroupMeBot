@@ -1,12 +1,12 @@
 # GroupMeBot - Apiai Integration, Custom Commands Integration and Giphy Integration
 
 ## Introduction
-How do I even get this started?
-
+What is this...
+Well it's a bot that talks to a chat, or all of your Direct Messages ,and will respond to them all accordingly.
 
 ## Contents
 
-  * [Quickly get our sample bot up and running in your groups](#deploy)
+  * [Quickly get our bot up and running in your groups](#deploy)
     * Deploy the code to heroku
     * Create a bot
     * Configure to your bot's credentials
@@ -23,7 +23,7 @@ How do I even get this started?
   * [Heroku Toolbelt](https://toolbelt.heroku.com/)
 
   If You don't want to install the ToolBelt Make sure you have Git shell, and install everything but the Heroku Gui and Bash
-  This will work, but I honestly reccomend, Installing it completely
+  This will work, but I honestly reccomend, Installing it completely, You'll only need it if you want to make changes, (which you prbly will need to)
 
 # Get your bot up and running<a name="deploy"></a>
 
@@ -34,9 +34,6 @@ Be sure to log into heroku, using your heroku credentials, then click the link b
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-You should be taken to a page that looks like this:
-
-![Deploy to Heroku](http://i.groupme.com/837x662.png.36c63698644a4f61a9ff3d5af91caa5e)
 
 Optionally, you can give your app a name, or instead leave
 it blank and let Heroku name it for you (you can change it later).
