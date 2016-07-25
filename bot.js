@@ -83,8 +83,7 @@ if(aires)
     //Makes the query seperated by plus
     if(request.name != botName) {
       console.log(aiClient)
-    if(aiClient != "undefined"){
-      console.log("dw")
+    if(aiClient != undefined){
     apiai(query);
       }
     }
