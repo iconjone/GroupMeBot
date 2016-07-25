@@ -81,9 +81,11 @@ if(aires)
     var query = str.substr(3);
     query = query.replace(/\s/g, "+");
     //Makes the query seperated by plus
-    if(request.name != botName)
-    if(aiClient != "NA")
+    if(request.name != botName) {
+    if(aiClient != "NA"){
     apiai(query);
+      }
+    }
   }
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
