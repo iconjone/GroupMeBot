@@ -1,4 +1,4 @@
-# GroupMeBot - Apiai Integration, Custom Commands Integration and Giphy Integration
+# GroupMeBot - Apiai Integration, Custom Commands Integration, Giphy Integration, Search integration, and some random face Integration. (And a Special Gif for someone that never stops saying something)
 
 ## Introduction
 What is this...
@@ -16,13 +16,13 @@ Well it's a bot that talks to a chat, or all of your Direct Messages ,and will r
     * Pull the code down to your local machine
     * Configure the local environment variables to your bot's credentials
 
-    (Note these instructions were made by GroupMe, but I added a few/kot of twists)
+    (Note these instructions were made by GroupMe, but I added a few/lot of twists)
 
 ## Requirements:
 * Mandatory
     * GroupMe account (duh)
     * Heroku account
-  * Optional but reccomended
+* Optional but reccomended
     * Api.Ai account
     * Google Search Key and ID
 
