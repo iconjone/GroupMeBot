@@ -73,6 +73,7 @@ if(gifres && request.name != botName && !(webres))
 if(searchres && request.name != botName && !(webres))
 {
     var query = str.substr(8);
+    if(googleID != undefined)
     search(query);
 }
 //Checks for and initates ApiAi
@@ -81,12 +82,9 @@ if(aires)
     var query = str.substr(3);
     query = query.replace(/\s/g, "+");
     //Makes the query seperated by plus
-    if(request.name != botName) {
-      console.log(aiClient)
-    if(aiClient != undefined){
+    if(request.name != botName)
+    if(aiClient != undefined)
     apiai(query);
-      }
-    }
   }
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
