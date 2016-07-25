@@ -3,6 +3,11 @@ var cool = require('cool-ascii-faces');
 var giphy = require('giphy-api')();
 
 var botID = process.env.BOT_ID;
+var botName = process.env.BOT_NAME;
+var nameTarget = process.env.NAME_TARGET;
+var specialMessage = process.env.SPECIAL_MESSAGE;
+var aiClient = process.env.AI_CLIENT;
+var aiDeveloper = process.env.AI_DEVELOPER;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy$/;
@@ -14,8 +19,8 @@ var str = request.text;
 var norstr = str.replace(/[^\w\s]|(.)(?=\1)/g, "");
 console.log(str);
 //makes true false variables
-var alecfind = new RegExp("ALEC");
-var alecres = alecfind.test(norstr);
+var msgfind = new RegExp(specialMessage);
+var msgres = msgfind.test(norstr);
 var chillfind = new RegExp("/chill");
 var chillres = chillfind.test(str);
 var aifind = new RegExp("ai");
@@ -24,7 +29,7 @@ var giffind = new RegExp("/g");
 var gifres = giffind.test(str);
 var searchfind = new RegExp("/search");
 var searchres = searchfind.test(str);
-	var webfind = new RegExp(".com");
+var webfind = new RegExp(".com");
 var webres = webfind.test(str);
 //Fallbacks
 //Checks if it contains a website
@@ -57,13 +62,13 @@ var webres = webfind.test(str);
     }
 //End of fallbacks
 //Checks for and initates Gif
-if(gifres && request.name != 'Jonathan Samuel Bot' && !(webres))
+if(gifres && request.name != botName && !(webres))
 {
     var query = str.substr(3);
     getGif(query);
 }
 //Checks for and initates Search
-if(searchres && request.name != 'Jonathan Samuel Bot' && !(webres))
+if(searchres && request.name != botName && !(webres))
 {
     var query = str.substr(8);
     search(query);
@@ -74,7 +79,7 @@ if(aires)
     var query = str.substr(3);
     query = query.replace(/\s/g, "+");
     //Makes the query seperated by plus
-    if(request.name != 'Jonathan Samuel Bot')
+    if(request.name != botName)
     apiai(query);
   }
   if(request.text && botRegex.test(request.text)) {
@@ -87,7 +92,7 @@ if(aires)
       var botResponse = "https://i.groupme.com/500x281.gif.9aa0ae471663485c962fdf04fe4dffdc.large";
       postMessage(botResponse);
       this.res.end();
-  } else if(alecres && request.name == 'Haana Janmohamed') {
+  } else if(msgres && request.name == nameTarget) {
         this.res.writeHead(200);
         var botResponse = "https://i.groupme.com/500x307.gif.38bd79c0db38415cba0333c1120fbff3.large";
         postMessage(botResponse);
@@ -99,7 +104,7 @@ if(aires)
             this.res.end();
     }   else if(request.text && help.test(request.text)) {
           this.res.writeHead(200);
-          var botResponse = "So you want to know how to use this? Look no further... If you want to trigger the AI type Ai or ai and whatever you want, try a slash and triggered, cool guy, or chill for special features... For Haana, she can type alec of any sort and it will post a GIF, a slash followed by g and a search term will return a gif, and a slash followed by search and a search term will return a Link."
+          var botResponse = "So you want to know how to use this? Look no further... If you want to trigger the AI type Ai or ai and whatever you want, try a slash and triggered, cool guy, or chill for special features... For a special person, they can type " + specialMessage + " of any sort and it will post a GIF, a slash followed by g and a search term will return a gif, and a slash followed by search and a search term will return a Link."
           postMessage(botResponse);
           this.res.end();
   }    else { console.log("don't care");
@@ -109,14 +114,14 @@ if(aires)
 }
 //Sends to ApiAi
 function apiai(query){
-var clientAccessToken='fd17db86686e41f780f909df26db2d32';
+var clientAccessToken=aiClient;
 pathapi = "/v1/query?lang=EN&query=" + query; //replace with query
 var options={
     hostname: 'api.api.ai',
     path: pathapi,
     method: 'GET',
     headers:{
-        'Authorization': 'Bearer 4f800336a78f4c97a83bf333bed66ccf'
+        'Authorization': 'Bearer ' + aiDeveloper
     }
 };
 	var callback=function(data)
@@ -150,7 +155,7 @@ var options={
       // Res contains gif data!
       console.log(res);
       if(res.data == "")
-      postMessage("Lol no results");
+      postMessage("No results, Sorry");
       else
       postMessage(res.data.images.original.url);
   });
