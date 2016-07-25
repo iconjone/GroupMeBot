@@ -6,26 +6,30 @@ Well it's a bot that talks to a chat, or all of your Direct Messages ,and will r
 
 ## Contents
 
-  * [Quickly get our bot up and running in your groups](#deploy)
+  * [Get our Bot](#deploy)
     * Deploy the code to heroku
     * Create a bot
     * Configure to your bot's credentials
+    * Set Up your Api.Ai bot, and connect it
+    * Set up your Google Search Key and ID
   * [Make changes to the bot](#pull)
     * Pull the code down to your local machine
     * Configure the local environment variables to your bot's credentials
 
-    (Note these instructions were made by GroupMe, but I added a few twists)
+    (Note these instructions were made by GroupMe, but I added a few/kot of twists)
 
 ## Requirements:
+* Mandatory
+    * GroupMe account (duh)
+    * Heroku account
+  * Optional but reccomended
+    * Api.Ai account
+    * Google Search Key and ID
 
-  * GroupMe account
-  * Heroku account
-  * [Heroku Toolbelt](https://toolbelt.heroku.com/)
 
-  If You don't want to install the ToolBelt Make sure you have Git shell, and install everything but the Heroku Gui and Bash
-  This will work, but I honestly reccomend, Installing it completely, You'll only need it if you want to make changes, (which you prbly will need to)
 
-# Get your bot up and running<a name="deploy"></a>
+
+# Get your bot up and running <a name="deploy"></a>
 
 ## Deploy to Heroku:
 
