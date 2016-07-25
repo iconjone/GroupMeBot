@@ -8,6 +8,8 @@ var nameTarget = process.env.NAME_TARGET;
 var specialMessage = process.env.SPECIAL_MESSAGE;
 var aiClient = process.env.AI_CLIENT;
 var aiDeveloper = process.env.AI_DEVELOPER;
+var googleKey = process.env.GOOGLE_KEY;
+var googleID = process.env.GOOGLE_ID;
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/cool guy$/;
@@ -163,7 +165,7 @@ var options={
 //Sends to Google Search(If you think it's broken, remember you only get 100 searches a day)
   function search(query)
   {
-     urlsearch = "https://www.googleapis.com/customsearch/v1?key=AIzaSyBWUDEVg5rMp8sBWxZFWfnSm1ES38NetH0&cx=002141288598133749978:zrk0yz6qoee&q=" + query;
+     urlsearch = "https://www.googleapis.com/customsearch/v1?key="+googleKey+"&cx="+googleID+"&q=" + query;
      var callback=function(data)
        {
 
