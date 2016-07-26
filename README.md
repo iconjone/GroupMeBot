@@ -5,11 +5,11 @@ What is this...
 Well it's a bot that talks to a chat, or all of your Direct Messages ,and will respond to them all accordingly.
 
 - [x] Made Custom Commands
-- [x] Linked the Giphy API
-- [x] Linked the APIAI
-- [x] Linked the Google Search API
+- [x] Linked the `Giphy API`
+- [x] Linked the `APIAI`
+- [x] Linked the `Google Search API`
 - [x] Formatted `bot.js` for integration with Heroku
-- [ ] Make an useable Readme
+- [ ] Make an useable `Readme`
 
 ## Contents
 
@@ -17,6 +17,7 @@ Well it's a bot that talks to a chat, or all of your Direct Messages ,and will r
     * Deploy the code to heroku
     * Create a bot
     * Configure to your bot's credentials
+    * Set Special Message and Person
     * Set Up your Api.Ai bot, and connect it
     * Set up your Google Search Key and ID
   * [Make changes to the bot](#pull)
@@ -27,11 +28,11 @@ Well it's a bot that talks to a chat, or all of your Direct Messages ,and will r
 
 ## Requirements:
 * Mandatory
-    * GroupMe account (duh)
-    * Heroku account
+    * `GroupMe` account (duh)
+    * `Heroku` account
 * Optional but reccomended
-    * Api.Ai account
-    * Google Search Key and ID
+    * `Api.Ai` account
+    * `Google Search Key and ID`
 
 
 
