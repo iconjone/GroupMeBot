@@ -101,14 +101,14 @@ if(aires)
         var botResponse = "https://i.groupme.com/500x307.gif.38bd79c0db38415cba0333c1120fbff3.large";
         postMessage(botResponse);
         this.res.end();
-      } else if(chillres) {
+      } else if(chillres && (request.name != botName)) {
             this.res.writeHead(200);
             var botResponse = "https://i.groupme.com/245x292.gif.ca41bed2aaef478b886e0660730c80b2.large";
             postMessage(botResponse);
             this.res.end();
     }   else if(request.text && help.test(request.text)) {
           this.res.writeHead(200);
-          var botResponse = "So you want to know how to use this? Look no further... If you want to trigger the AI type Ai or ai and whatever you want, try a slash and triggered, cool guy, or chill for special features... For a special person, they can type " + specialMessage + " of any sort and it will post a GIF, a slash followed by g and a search term will return a gif, and a slash followed by search and a search term will return a Link."
+          var botResponse = "So you want to know how to use this? Look no further... If you want to trigger the AI type Ai or ai and whatever you want(Ai what is 24 + 18), try a slash and triggered, cool guy, or chill for special features...(/triggered, /cool guy, /chill) For a special person, they can type " + specialMessage + " of any sort and it will post a GIF, a slash followed by g and a search term will return a gif(/g puppies), and a slash followed by search and a search term will return a Link(/search How to bake a cake)."
           postMessage(botResponse);
           this.res.end();
   }    else { console.log("don't care");
