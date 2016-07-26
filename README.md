@@ -4,6 +4,13 @@
 What is this...
 Well it's a bot that talks to a chat, or all of your Direct Messages ,and will respond to them all accordingly.
 
+- [x] Made Custom Commands
+- [x] Linked the Giphy API
+- [x] Linked the APIAI
+- [x] Linked the Google Search API
+- [x] Formatted `bot.js` for integration with Heroku
+- [ ] Make an useable Readme
+
 ## Contents
 
   * [Get our Bot](#deploy)
